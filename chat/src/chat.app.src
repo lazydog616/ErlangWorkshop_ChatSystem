@@ -1,0 +1,7 @@
+{application, chat, [
+    {description, "Chat System"},
+    {vsn, "0.1.0"},
+    {applications, [kernel, stdlib, lager]},
+    {registered, [chat_sup, chat_server]},
+    {mod, {chat_app, []}}
+]}.
